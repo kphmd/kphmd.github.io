@@ -1,148 +1,78 @@
-<HTML>
-<HEAD>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<TITLE>NOC Big Data</TITLE>
-<style>
-table {
-	border: 1px solid #ccc; 
-	border-bottom: 0;
-	width: 52.7em;
-	margin-bottom: 2em;
-}
-body {
-   font-family: verdana, arial, tahoma, sans-serif;
-}
-table th {
-	text-align: center;
-	background: #247eca;
-	color: white;
-	padding: 0em; 
-	border: outset 2px #eee8aa;
-}
-table td {
-	border-bottom: 1px solid #DDD; 
-	padding: .0em .0em .0em .5em;
-}
-table tr td.rank {
-	background: transparent; 
-	border: 2px outset #ffffff;
-}
-table tr.gold td.rank {
-	background: #f9d923;
-	border: outset 2px #ffd700;
-}
-table tr.silver td.rank {
-	background: Silver;
-	border: 2px outset sILVER;
-}
-table tr.bronze td.rank {
-	background: #c08e55; 
-	border: outset 2px #c9960c;
-}
-table td.name {
-	padding-left: 2em;
-}
-table th.name{
-	padding-left: 3em; 
-}
-table tr.even td {
-	background: #F7F7F7;
-}
-table tr td.r10 {
-	background: #e9d923;
-	border: 2px outset #DCDCDC;
-}
-table tr td.r9 {
-	background: #e1d963;
-	border: 2px outset #DCDCDC;
-}
-table tr td.r8 {
-	background: #DDD7AA;
-	border: 2px outset #DCDCDC;
-}
-table tr td.r7 {
-	background: #d2d2d2;
-	border: 2px outset #DCDCDC;
-}
-table tr td.r6 {
-	background: #DDCDBD;
-	border: 2px outset #DCDCDC;
-}
-table tr td.r5 {
-	background: #e6e6e6;
-	border: 2px outset #DCDCDC;
-}
-table tr td.r4 {
-	background: #eee;
-	border: 2px outset #f3f3f3;
-}
-table tr td.r3 {
-	background: #F7f7f7;
-	border: 2px outset #f7f7f7;
-}
-div.tail {
-       font-size: .8em;
-       color: #888;
-//width: 65.875em;
-width: 80%;
- border: 1px solid #ccc;
-margin-left: auto;
-margin-right: auto;
-}
-span.right {
-     float: right;
-}
-// troy additions
-table tr.odd {
-        background-color: #0; color: black;
-}
-table tr.even {
-        background-color: #EEEEFF; color: black;
-}
-table tr td.yes {
-        background-color: #00ff00; color: black;
-        text-align: center;
-}
-table tr td.pending {
-        background-color: #ffff00; color: black;
-        text-align: center;
-}
-table tr td.no {
-        background-color: #ff0000; color: black;
-        text-align: center;
-}
-table tr td.center {
-        text-align: center;
-}
-table tr td.right {
-        text-align: right;
-}
-</style>
-<META HTTP-EQUIV="REFRESH" CONTENT="60;">
-<META HTTP-EQUIV="EXPIRES" CONTENT="0">
-<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
-</HEAD>
-<BODY>
-<font face="verdana, arial, helvetica" align="right">
-<center>
-<h2>NOC 2018 比赛</h2>
-<h3></h3>
-<br>
-</center>
-</font>
-<center>
-<TABLE cellspacing="0">
-<tr><th>排名</th><th>得分</th><th>文件名称</th><th>更新时间</th></tr>
-<tr><td>1</td><td>92064</td><td>limingming.txt</td><td>2018年 9月28日 星期五 16时26分01秒 CST</td></tr>
-<tr><td>2</td><td>84818</td><td>=Xgb18030XBXvdO</td><td>2018年 9月28日 星期五 16时26分01秒 CST</td></tr>
-<tr><td>3</td><td>71593</td><td>callDetail.csv</td><td>2018年 9月28日 星期五 16时26分01秒 CST</td></tr>
-<tr><td>4</td><td>58331</td><td>gibbs.py</td><td>2018年 9月28日 星期五 16时26分01秒 CST</td></tr>
-<tr><td>5</td><td>51256</td><td>submit3.csv</td><td>2018年 9月28日 星期五 16时26分01秒 CST</td></tr>
-<tr><td>6</td><td>38512</td><td>submitX.csv</td><td>2018年 9月28日 星期五 16时26分01秒 CST</td></tr>
-<tr><td>7</td><td>31101</td><td>limisdfsdfdsngming.txt</td><td>2018年 9月28日 星期五 16时26分01秒 CST</td></tr>
-<tr><td>8</td><td>17866</td><td>submit2.csv</td><td>2018年 9月28日 星期五 16时26分01秒 CST</td></tr>
-</TABLE>
-</center>
-</BODY>
-</HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dropdowns 1: Basic, single level</title>
+	<style>
+		body {
+			font: 15px arial, helvetica, sans-serif;
+			background: #333;
+			color: #fff;
+		}
+	
+		a {
+			color: #06c;
+		}
+	
+		ul { /* all lists... */
+			padding: 0;
+			margin: 0;
+			background: #fff;
+		}
+	
+		li { /* all list items... */
+			display: inline; /* set the list items left-to-right */
+			position: relative; /* set the origin for child boxes to be positioned from */
+		}
+
+		ul ul { /* lists within lists... */
+			position: absolute; /* place them over the top of everything */
+			left: 0; /* align them to the left of the parent list item  - necessary for some older browsers */
+			top: 100%; /* align them to the bottom of the parent list item - again only necessary for older browsers */
+			display: none; /* hide 'em */
+		}
+	
+		li:hover ul { /* when list items are hovered over, do this to lists contained within them... */
+			display: block; /* show 'em */
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li>
+			<a href="">Birds</a>
+			<ul>
+				<li><a href="">Ratites</a></li>
+				<li><a href="">Fowl</a></li>
+				<li><a href="">Neoaves</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="">Mammals</a>
+			<ul>
+				<li><a href="">Monotremes</a></li>
+				<li><a href="">Marsupials</a></li>
+				<li><a href="">Placentals</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="">Reptiles</a>
+			<ul>
+				<li><a href="">Lizards and snakes</a></li>
+				<li><a href="">Tortoises and turtles</a></li>
+				<li><a href="">Crocodilians</a></li>
+				<li><a href="">Tuatara</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="">Amphibians</a>
+			<ul>
+				<li><a href="">Frogs and toads</a></li>
+				<li><a href="">Salamanders and newts</a></li>
+				<li><a href="">Caecilians</a></li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
